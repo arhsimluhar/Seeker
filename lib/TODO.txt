@@ -3,3 +3,44 @@ Functionality:
 
 1. Execute and collect Output
 2.
+
+
+Some instructions to be followed before commiting
+
+1. keep code clean,properly commented and short and simple.
+2. where ever possible explain what the code snippet is doing.
+3. Create class structures for all the future operations.
+4. write python 2 - 3  compatible code.
+
+
+
+File contents to be maintained according to operation.
+
+1. file.py, to be used only for file/ directory related operations and 
+   try to make functions more generic , modular and use OOPs wherever possible
+   
+2. utility.py, used to write functions that perform task ,to manage stuffs or format
+   outputs,inputs and all other intermediate stuff
+
+
+
+
+Tasks to do.
+
+
+1. manage packages to be installed to run seeker (at the moment not required )
+   just make sure if shutil library is available in default packages in python 2 & 3.
+
+2. progress bar function to display progress of a process
+   Input : any operation name, progress value 
+
+   output
+
+   "Operation name" Started 
+
+   [###################################################################       ] x% completed,
+
+   Note this should stay in single line even when entered is pressed.
+   insert this in utility.py   
+
+
