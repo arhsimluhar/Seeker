@@ -4,6 +4,7 @@ import sys
 import math
 import json
 import logging
+import shutil
 
 
 def detect_language(file_path=None):
