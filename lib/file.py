@@ -1,6 +1,7 @@
 from __future__ import print_function
 import os
 import sys
+import shutil
 import math
 import json
 import logging
@@ -40,7 +41,7 @@ def copy_directory_structure(src, dst, copy_file = False):
     """ Copies the directory or directory structure according
     to the value of copy_file
     """
-    if copy_file = True :
+    if copy_file == True :
         shutil.copytree(src,dst)
     else:
         modified_copytree(src, dst)
@@ -87,6 +88,7 @@ def changePermission(mode,objectName,File = True):
         output = command_run("chmod -R "+str(mode)+" "+str(objectName))
     if output[1]:
         pass
+
 def changeOwner(user,group,objectName,File = True):
     if File:
         output = command_run("chown "+str(user)+":"+str(group)+" "+str(objectName))
