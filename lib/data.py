@@ -1,6 +1,6 @@
 '''
 This file contains the functions that generate
-data, in different formats and provide that as stdin to files 
+data, in different formats and provide that as stdin to files
 
 '''
 
@@ -15,13 +15,13 @@ def randomInt(start = 0 ,end = 100):
 	return random.randint(start,end)
 
 
-def randomAlpha(start = 97,end = 122, case = "lower"):
+def randomAlpha(case = "lower"):
 	'''
 	returns any random Alphabet between A-Z or a-z (inclusive)
 	if case not specified give lowercase letter
 	'''
 	if case == "lower":
-		return chr(randomInt(start,end))
+		return chr(randomInt(97,122))
 	else:
 		return chr(randomInt(65,90))
 
@@ -33,7 +33,7 @@ def randomAscii(start = 0,end = 255,range = True):
 	if not range:
 		return chr(randomInt(start,end))
 	else:
-		return map(chr,randomInts(start,end))
+		return map(chr,randomInts(start,end))  # what is the use of map() if randomInts() will generate only one output ?
 
 
 
@@ -52,10 +52,4 @@ def randomInts(start = 0, end = 100,count = 100, unique = True):
         ans = []
         for i in xrange(count):
             ans.append(randomInt(start,end))
-        return ans 
-
-
-
-
-
-
+        return ans
