@@ -47,7 +47,7 @@ def randomAlpha(start = 97, end = 122):
 				 else:
 					 raise ValueError("Invalid Output!")
 			else:
-				raise ValueError("Invalie arguments")
+				raise ValueError("Invalid arguments")
 		else:
 			raise ValueError("Invalid arguments !")
 	except ValueError as e:
@@ -69,7 +69,7 @@ def randomAscii(start = 0,end = 255,range = True):
 	                if min(output) >= 0 and max(output) <=255:
 	                    return output
 	                else:
-	                    raise ValueError("Invalie Output !")
+	                    raise ValueError("Invalid Output !")
 	            else:
 	                if output >=0 and output <=255:
 	                    return output
